@@ -47,3 +47,4 @@ We visualize the relationships between all independent features and the target v
 
 #9.User Interaction:
 Now, users can predict the house price by providing input for various features such as the number of bedrooms, bathrooms, square footage, and more.
+
