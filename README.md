@@ -1,50 +1,77 @@
-# House-price-prediction
+# House Price Prediction Project
 
-I have implemented a comprehensive solution to predict house prices using a variety of models, including Linear Regression, Decision Tree, Random Forest, XGBoost, Support Vector Machine, k-Nearest Neighbors, and Neural Networks.
+Welcome to my House Price Prediction project! This repository contains a comprehensive solution to predict house prices using various machine learning algorithms. Here's a detailed overview of the project:
 
-#Project Highlights:
+## Project Overview
 
-#1.Data Loading and Preprocessing:
-We start by loading the dataset and converting the date column to a datetime object for easier manipulation.
-We extract the year and month from the date and drop unnecessary columns (id and date).
-Missing values are handled by dropping any rows with NaNs.
+I have implemented a variety of machine learning models to predict house prices based on a dataset containing detailed features of houses.
 
-#2.Feature and Target Separation:
-The dataset is split into features (X) and the target variable (y), where the target variable is the house price.
+## Project Highlights
 
-#3.Train-Test Split:
-We split the data into training and testing sets to evaluate our models' performance on unseen data.
+### Data Loading and Preprocessing
 
-#4.Model Training and Evaluation:
-We define a helper function evaluate_model() to train each model and calculate the RMSE and R² scores for performance evaluation.
-Models included in this project are:
-Linear Regression
-Decision Tree
-Random Forest
-XGBoost
-Support Vector Machine (SVR)
-k-Nearest Neighbors
-Neural Networks (using Keras and TensorFlow)
+- Loaded the dataset and converted the date column to a datetime object for easier manipulation.
+- Extracted the year and month from the date and dropped unnecessary columns (`id` and `date`).
+- Handled missing values by dropping any rows with NaNs.
 
-#5.Model Performance:
-Linear Regression: RMSE = 212036.1654, R² = 0.7026
-Decision Tree: RMSE = 211372.5139, R² = 0.7045
-Random Forest: RMSE = 150257.8166, R² = 0.8507
-XGBoost: RMSE = 142414.6545, R² = 0.8658
-Support Vector Machine: RMSE = 400942.5278, R² = -0.0634
-k-Nearest Neighbors: RMSE = 186712.8618, R² = 0.7694
-Neural Network: RMSE = 191165.3486, R² = 0.7583
+### Feature and Target Separation
 
-#6.Model Selection:
-After training and evaluating each model, we select the best-performing model based on RMSE. The best model for this project is XGBoost.
+- Split the dataset into features (`X`) and the target variable (`y`), where `y` represents the house price.
 
-#7.Visualization:
-We plot actual vs. predicted prices for each model to visually inspect their performance.
-Feature importance is plotted for models that provide this information, helping us understand which features are most influential in predicting house prices.
+### Train-Test Split
 
-#8.Feature Relationships:
-We visualize the relationships between all independent features and the target variable (house prices) using scatter plots. This helps us understand the correlation between each feature and house prices.
+- Split the data into training and testing sets to evaluate model performance on unseen data.
 
-#9.User Interaction:
-Now, users can predict the house price by providing input for various features such as the number of bedrooms, bathrooms, square footage, and more.
+### Model Training and Evaluation
 
+- Defined a helper function `evaluate_model()` to train each model and calculate RMSE and R² scores for evaluation.
+- Implemented the following models:
+  - Linear Regression
+  - Decision Tree
+  - Random Forest
+  - XGBoost
+  - Support Vector Machine (SVR)
+  - k-Nearest Neighbors
+  - Neural Networks (using Keras and TensorFlow)
+
+### Model Performance
+
+- **Linear Regression**: RMSE = 212036.1654, R² = 0.7026
+- **Decision Tree**: RMSE = 211372.5139, R² = 0.7045
+- **Random Forest**: RMSE = 150257.8166, R² = 0.8507
+- **XGBoost**: RMSE = 142414.6545, R² = 0.8658 **(Best Model)**
+- **Support Vector Machine**: RMSE = 400942.5278, R² = -0.0634
+- **k-Nearest Neighbors**: RMSE = 186712.8618, R² = 0.7694
+- **Neural Network**: RMSE = 191165.3486, R² = 0.7583
+
+### Model Selection
+
+- Selected the best-performing model based on RMSE, which is XGBoost.
+
+### Visualization
+
+- Plotted actual vs. predicted prices for each model to visually inspect their performance.
+- Visualized feature importance for models that provided this information to understand which features influence house prices the most.
+
+### Feature Relationships
+
+- Visualized the relationships between all independent features and the target variable (house prices) using scatter plots to explore correlations.
+
+### User Interaction
+
+- Implemented user interaction to predict house prices based on input features such as number of bedrooms, bathrooms, and square footage.
+
+## Getting Started
+
+To get started with this project, clone the repository and follow the instructions in the `README.md` file to set up your environment and run the code.
+
+## Technologies Used
+
+- Python
+- Scikit-learn
+- XGBoost
+- TensorFlow
+- Keras
+- Matplotlib
+- Pandas
+- NumPy
